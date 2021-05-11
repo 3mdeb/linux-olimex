@@ -1,0 +1,41 @@
+Module                  Size  Used by
+axp20x_ac_power        16384  0
+axp20x_battery         16384  0
+axp20x_adc             16384  0
+at24                   20480  0
+lima                   57344  0
+gpu_sched              32768  1 lima
+sun4i_codec            40960  3
+pwm_sun4i              16384  1
+ftdi_sio               45056  0
+usbserial              28672  1 ftdi_sio
+sunxi_cedrus           36864  0
+v4l2_mem2mem           24576  1 sunxi_cedrus
+sun4i_ss               28672  0
+videobuf2_dma_contig    20480  1 sunxi_cedrus
+videobuf2_memops       16384  1 videobuf2_dma_contig
+libdes                 28672  1 sun4i_ss
+videobuf2_v4l2         24576  2 sunxi_cedrus,v4l2_mem2mem
+sun4i_drm_hdmi         28672  0
+videobuf2_common       49152  3 sunxi_cedrus,v4l2_mem2mem,videobuf2_v4l2
+videodev              192512  4 sunxi_cedrus,videobuf2_common,v4l2_mem2mem,videobuf2_v4l2
+mc                     32768  5 sunxi_cedrus,videobuf2_common,videodev,v4l2_mem2mem,videobuf2_v4l2
+panel_simple           73728  0
+uio_pdrv_genirq        16384  0
+uio                    20480  1 uio_pdrv_genirq
+pwm_bl                 16384  0
+cpufreq_dt             16384  0
+evdev                  24576  3
+sun4i_ts               16384  0
+hwmon                  24576  2 sun4i_ts,axp20x_adc
+usb_f_acm              16384  1
+u_serial               20480  3 usb_f_acm
+g_serial               16384  0
+libcomposite           45056  2 g_serial,usb_f_acm
+ip_tables              28672  0
+x_tables               24576  1 ip_tables
+axp20x_usb_power       16384  0
+industrialio           53248  4 axp20x_ac_power,axp20x_usb_power,axp20x_battery,axp20x_adc
+pinctrl_axp209         16384  0
+sun4i_lradc_keys       16384  0
+smsc                   16384  1
