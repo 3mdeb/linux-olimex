@@ -6,7 +6,7 @@
 
         images {
                 kernel-1 {
-                        description = "Linux kernel 5.10.35-olimex";
+                        description = "Linux kernel 5.10.23-olimex";
                         data = /incbin/("./arch/arm/boot/zImage");
                         type = "kernel";
                         arch = "arm";
@@ -69,7 +69,7 @@
                 default = "config-9789";
 
                 config-9789 {
-                        description = "Boot Linux kernel 5.10.35-olimex with T2-OLinuXino-MICRO-e8Gs16M-IND";
+                        description = "Boot Linux kernel 5.10.23-olimex with T2-OLinuXino-MICRO-e8Gs16M-IND";
                         kernel = "kernel-1";
                         fdt = "fdt-6", "overlay-1", "overlay-2";
                         compatible = "olimex,t2-olinuxino-micro-e8gs16m-ind";
